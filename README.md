@@ -1,4 +1,4 @@
-# listanozze-cate-e-bombi
+# listanozze-tere-e-tommi
 
 This template should help get you started developing with Vue 3 in Vite.
 
