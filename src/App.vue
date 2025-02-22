@@ -2,7 +2,7 @@
   <v-app class="bg-primary-light">
     <v-main>
       <v-row justify="center" class="my-6">
-        <v-col cols="12" md="8" class="bg-neutral rounded-lg">
+        <v-col cols="12" md="8" class="bg-neutral rounded-xl">
           <PageHeader />
 
           <InfoSection />
