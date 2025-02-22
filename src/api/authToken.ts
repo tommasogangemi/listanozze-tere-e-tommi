@@ -5,8 +5,10 @@ type TokenResponse = {
   expiry_date: number
 }
 
+const TOKEN_LS_KEY = 'tere&tommi_token'
+
 const parseTokenFromStorage = () => {
-  const token = localStorage.getItem('token')
+  const token = localStorage.getItem(TOKEN_LS_KEY)
 
   return token ? JSON.parse(token) : undefined
 }
@@ -24,7 +26,7 @@ const refreshToken = async () => {
   const res = await fetch(`${CFG.serverUrl}`)
   const fetchedToken = await res.json()
 
-  localStorage.setItem('token', JSON.stringify(fetchedToken))
+  localStorage.setItem(TOKEN_LS_KEY, JSON.stringify(fetchedToken))
   token = parseTokenFromStorage()
 }
 

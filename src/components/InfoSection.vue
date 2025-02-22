@@ -14,13 +14,7 @@
 
     <v-row>
       <v-col cols="auto" v-if="$vuetify.display.mdAndUp">
-        <v-img
-          src="chieas-san-francesco.jpeg"
-          aspect-ratio="1.7"
-          cover
-          width="396"
-          class="rounded-lg"
-        />
+        <v-img src="chiesa.jpeg" aspect-ratio="1.7" cover width="396" class="rounded-lg" />
       </v-col>
       <v-col class="d-flex py-md-6 flex-column justify-space-between">
         <div>
@@ -52,12 +46,12 @@
         <div class="mt-6 mt-md-0">
           <div class="text-primary font-weight-bold">I nostri recapiti</div>
           <div>
-            <span class="text-primary font-weight-bold">Caterina: </span> +39 346 6423048 - Via
-            Forlivese 45/B, San Francesco, Pelago
+            <span class="text-primary font-weight-bold">Teresa: </span> +39 338 9648057 - Via della
+            Fornace 72, Compiobbi, Fiesole (FI)
           </div>
           <div>
-            <span class="text-primary font-weight-bold">Mattia: </span> +39 335 1597891 - Via
-            Gramsci 43/E, Reggello
+            <span class="text-primary font-weight-bold">Tommaso: </span> +39 347 5375249 - Piazza
+            Stazione 1A, Pontassieve (FI)
           </div>
         </div>
       </v-col>
@@ -73,13 +67,13 @@
 
     <v-row justify="center">
       <v-col cols="12" md="auto" class="py-0 text-caption mb-n2 text-center">
-        <span>Mattia Faustino, IBAN: IT88L0306938013100000008009</span>
+        <span>Tommaso Tagliaferri, IBAN: IT28C0873638010000000074065</span>
       </v-col>
       <v-col cols="12" md="auto" class="pb-0 py-md-0 text-caption mb-n2 text-center">
-        <a href="https://www.paypal.me/mattiafaustino" target="_blank">Paypal</a>
+        <a href="https://www.paypal.me/ttagliaferri671" target="_blank">Paypal</a>
         <span class="mx-4"></span>
         <a
-          href="https://www.satispay.com/download/qrcode/S6Y-CON--70C140E7-BEF5-44C4-A538-99D011EC5895"
+          href="https://web.satispay.com/download/qrcode/S6Y-CON--3CAEC28A-3949-4B96-AD7B-A2DF45EB8D5B"
           target="_blank"
           >Satispay
         </a>

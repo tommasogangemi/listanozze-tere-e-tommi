@@ -20,11 +20,11 @@ export const vuetify = createVuetify({
     themes: {
       light: {
         colors: {
-          primary: '#465048',
-          'primary-light': '#6f7d6d',
-          accent: '#933e49',
+          primary: '#2d432c',
+          'primary-light': '#c6d8c2',
+          accent: '#2d432c',
           pink: '#e2bcb8',
-          neutral: '#EDEBEA',
+          neutral: '#eaefeb',
           'neutral-lighten-1': 'f6f5f5',
           'neutral-lighten-2': '#fdfdfd',
           'neutral-darken-1': '#d5d4d3',

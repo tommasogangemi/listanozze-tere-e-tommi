@@ -3,11 +3,14 @@
     <div class="my-3">Puoi effettuare il pagamento puoi scegliere una delle seguenti opzioni</div>
 
     <div class="font-weight-bold">Bonifico bancario a:</div>
-    <div>Mattia Faustino</div>
-    <div>IBAN: IT88L0306938013100000008009</div>
+    <div>Tommaso Tagliaferri</div>
+    <div>IBAN: IT28C0873638010000000074065</div>
 
     <div class="font-weight-bold mt-3 mb-1">Paypal</div>
-    <div class="rounded-lg pa-1 paypal" @click="openWindow('https://www.paypal.me/mattiafaustino')">
+    <div
+      class="rounded-lg pa-1 paypal"
+      @click="openWindow('https://www.paypal.me/ttagliaferri671')"
+    >
       <v-img width="96" cover src="paypal.png" />
     </div>
 
@@ -16,7 +19,7 @@
       class="rounded-lg pa-1 satispay"
       @click="
         openWindow(
-          'https://www.satispay.com/download/qrcode/S6Y-CON--70C140E7-BEF5-44C4-A538-99D011EC5895'
+          'https://web.satispay.com/download/qrcode/S6Y-CON--3CAEC28A-3949-4B96-AD7B-A2DF45EB8D5B'
         )
       "
     >
