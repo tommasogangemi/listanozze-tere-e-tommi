@@ -1,16 +1,6 @@
 <template>
   <v-container class="mt-2">
-    <v-row align="center" class="mb-4">
-      <v-col>
-        <v-divider />
-      </v-col>
-      <v-col cols="auto">
-        <h2 id="informazioni" class="pretty-font font-weight-bold text-accent">Informazioni</h2>
-      </v-col>
-      <v-col>
-        <v-divider />
-      </v-col>
-    </v-row>
+    <SectionHeading id="informazioni" title="Informazioni" />
 
     <v-row>
       <v-col cols="auto" v-if="$vuetify.display.mdAndUp">
@@ -56,34 +46,12 @@
         </div>
       </v-col>
     </v-row>
-
-    <v-row>
-      <v-col class="bg-neutral">
-        <h2 class="text-accent text-center font-weight-bold my-2">
-          Siamo felici di condividere questo momento di gioia con voi!
-        </h2>
-      </v-col>
-    </v-row>
-
-    <v-row justify="center">
-      <v-col cols="12" md="auto" class="py-0 text-caption mb-n2 text-center">
-        <span>Tommaso Tagliaferri, IBAN: IT28C0873638010000000074065</span>
-      </v-col>
-      <v-col cols="12" md="auto" class="pb-0 py-md-0 text-caption mb-n2 text-center">
-        <a href="https://www.paypal.me/ttagliaferri671" target="_blank">Paypal</a>
-        <span class="mx-4"></span>
-        <a
-          href="https://web.satispay.com/download/qrcode/S6Y-CON--3CAEC28A-3949-4B96-AD7B-A2DF45EB8D5B"
-          target="_blank"
-          >Satispay
-        </a>
-      </v-col>
-    </v-row>
   </v-container>
 </template>
 
 <script setup lang="ts">
 import { defineComponent } from 'vue'
+import SectionHeading from './SectionHeading.vue'
 
 defineComponent({ name: 'InfoSection' })
 </script>

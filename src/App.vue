@@ -5,11 +5,13 @@
         <v-col cols="12" md="8" class="bg-neutral rounded-lg">
           <PageHeader />
 
-          <List />
+          <InfoSection />
+
+          <!-- <List /> -->
 
           <MessagesSection />
 
-          <InfoSection />
+          <Footer />
         </v-col>
       </v-row>
     </v-main>
@@ -21,4 +23,5 @@ import InfoSection from './components/InfoSection.vue'
 import List from './components/List.vue'
 import PageHeader from './components/PageHeader.vue'
 import MessagesSection from './components/MessagesSection.vue'
+import Footer from './components/Footer.vue'
 </script>

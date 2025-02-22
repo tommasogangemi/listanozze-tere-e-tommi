@@ -1,8 +1,9 @@
 @import './base.css';
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
 
 @font-face {
-  font-family: 'Barlista';
-  src: url('Barlista.ttf');
+  font-family: 'Elven Common Speak';
+  src: url('elvencommonspeak.ttf');
 }
 
 @font-face {
@@ -39,7 +40,11 @@ a {
 }
 
 .pretty-font {
-  font-family: 'Barlista', sans-serif;
+  font-family: 'Elven Common Speak', sans-serif;
+}
+
+.italic-font {
+  font-family: 'Alex Brush', 'Source Serif 4', serif;
 }
 
 .truncate {

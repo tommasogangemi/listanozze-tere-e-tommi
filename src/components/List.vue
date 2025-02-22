@@ -1,16 +1,6 @@
 <template>
   <v-container>
-    <v-row align="center" class="mb-4">
-      <v-col>
-        <v-divider />
-      </v-col>
-      <v-col cols="auto">
-        <h2 id="lista-nozze" class="pretty-font font-weight-bold text-accent">Lista Regali</h2>
-      </v-col>
-      <v-col>
-        <v-divider />
-      </v-col>
-    </v-row>
+    <SectionHeading id="lista-nozze" title="Lista Regali" />
 
     <v-row>
       <v-col v-for="gift in enrichGifts" cols="12" md="6" lg="4" :key="gift.name">
@@ -26,6 +16,7 @@
 import GiftCard from './GiftCard.vue'
 import { ref } from 'vue'
 import GiftModal from './GiftModal.vue'
+import SectionHeading from './SectionHeading.vue'
 import { useSpreadsheet, type EnrichedGift } from '@/composables/useSpreadsheet'
 
 const { enrichGifts, get } = useSpreadsheet()

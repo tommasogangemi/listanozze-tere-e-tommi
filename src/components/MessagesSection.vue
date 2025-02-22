@@ -1,16 +1,6 @@
 <template>
   <v-container v-if="donationsWithMessages.length > 0" class="mt-4">
-    <v-row align="center" class="mb-4">
-      <v-col>
-        <v-divider />
-      </v-col>
-      <v-col cols="auto">
-        <h2 id="messaggi" class="pretty-font font-weight-bold text-accent">Messaggi</h2>
-      </v-col>
-      <v-col>
-        <v-divider />
-      </v-col>
-    </v-row>
+    <SectionHeading id="messaggi" title="Messaggi" />
 
     <v-row justify="center">
       <v-col cols="12" md="10">
@@ -57,6 +47,7 @@
 import { useSpreadsheet } from '@/composables/useSpreadsheet'
 import { computed } from 'vue'
 import { defineComponent } from 'vue'
+import SectionHeading from './SectionHeading.vue'
 
 defineComponent({ name: 'MessagesSection' })
 
