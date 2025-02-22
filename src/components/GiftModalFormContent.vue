@@ -1,22 +1,13 @@
 <template>
   <v-row justify="space-between" align="center">
-    <v-col cols="12" sm="auto" class="font-weight-medium text-primary text-h4 pb-0 pb-sm-3">
-      <span class="">{{ gift.name }}</span>
-    </v-col>
-
-    <v-col
-      cols="12"
-      sm="auto"
-      class="font-weight-medium text-primary text-h5 text-right pb-0 pb-sm-3"
-      v-if="!!gift.price"
-    >
-      <span class="text-h5">Disponibili: {{ gift.availableAmount }}€</span>
+    <v-col cols="12" sm="auto" class="pb-0 pb-sm-3">
+      <span class="italic-font text-primary" style="font-size: 2.5rem">{{ gift.name }}</span>
     </v-col>
   </v-row>
 
   <v-row>
     <v-col cols="12" md="5" lg="6">
-      <v-img :src="gift.image" cover />
+      <v-img :src="gift.image" class="rounded-lg" cover />
     </v-col>
 
     <v-col cols="12" md="7" lg="6" class="text-center">
@@ -48,8 +39,9 @@
       <v-btn
         :disabled="!isFormValid || isUpdating"
         :loading="isUpdating"
-        color="primary"
+        color="primary-lighten-1"
         flat
+        rounded="lg"
         @click="handleSubmit"
         >Conferma</v-btn
       >

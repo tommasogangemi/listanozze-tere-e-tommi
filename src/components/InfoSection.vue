@@ -3,7 +3,7 @@
     <SectionHeading id="informazioni" title="Informazioni" />
 
     <v-row justify="center">
-      <v-col cols="12" md="10" class="px-6">
+      <v-col cols="12" md="10" class="px-6 py-0">
         <v-row>
           <v-col cols="auto" v-if="$vuetify.display.mdAndUp">
             <v-img src="chiesa.jpeg" aspect-ratio="1.7" cover width="396" class="rounded-lg" />

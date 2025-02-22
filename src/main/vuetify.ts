@@ -21,6 +21,7 @@ export const vuetify = createVuetify({
       light: {
         colors: {
           primary: '#2d432c',
+          'primary-lighten-1': '#5e8d56',
           'primary-light': '#c6d8c2',
           accent: '#2d432c',
           pink: '#e2bcb8',
@@ -39,11 +40,11 @@ export const vuetify = createVuetify({
   defaults: {
     VTextField: {
       variant: 'outlined',
-      color: 'primary-light'
+      color: 'primary'
     },
     VTextarea: {
       variant: 'outlined',
-      color: 'primary-light'
+      color: 'primary'
     }
   }
 })

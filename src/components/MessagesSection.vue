@@ -51,7 +51,9 @@ import SectionHeading from './SectionHeading.vue'
 
 defineComponent({ name: 'MessagesSection' })
 
-const { spreadSheet } = useSpreadsheet()
+const { spreadSheet, get } = useSpreadsheet()
+
+get()
 
 const donationsWithMessages = computed(
   () =>

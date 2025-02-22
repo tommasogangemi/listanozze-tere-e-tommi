@@ -11,7 +11,12 @@
         <v-container>
           <v-row justify="center">
             <v-col cols="12" md="10" class="px-0">
-              <v-btn color="accent" flat prepend-icon="mdi-arrow-left" @click="closeModal()"
+              <v-btn
+                color="accent"
+                flat
+                rounded="lg"
+                prepend-icon="mdi-arrow-left"
+                @click="closeModal()"
                 >Torna alla lista</v-btn
               >
             </v-col>

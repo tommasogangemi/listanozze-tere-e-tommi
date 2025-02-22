@@ -7,9 +7,13 @@
 
           <InfoSection />
 
-          <!-- <List /> -->
+          <GiftsSection />
 
           <MessagesSection />
+
+          <v-container class="mt-4 pb-0">
+            <v-divider />
+          </v-container>
 
           <Footer />
         </v-col>
@@ -20,7 +24,7 @@
 
 <script setup lang="ts">
 import InfoSection from './components/InfoSection.vue'
-import List from './components/List.vue'
+import GiftsSection from './components/GiftsSection.vue'
 import PageHeader from './components/PageHeader.vue'
 import MessagesSection from './components/MessagesSection.vue'
 import Footer from './components/Footer.vue'

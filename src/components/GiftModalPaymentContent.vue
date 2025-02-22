@@ -26,14 +26,8 @@
       <v-img width="96" src="satispay.png" />
     </div>
 
-    <!-- <div class="text-caption mt-5">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Et fuga vitae dicta culpa velit hic
-      dolores quos sint, ex possimus, nam in ad rerum vel quas tempore, tenetur labore cupiditate
-      quam minus voluptas accusantium cum.
-    </div> -->
-
     <v-divider class="my-5" />
-    <div class="text-center text-accent text-h5 font-weight-bold">Grazie!</div>
+    <div class="italic-font text-center text-accent" style="font-size: 2rem">Grazie!</div>
   </div>
 </template>
 
