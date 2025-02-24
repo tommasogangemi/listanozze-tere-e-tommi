@@ -1,6 +1,6 @@
 <template>
   <v-container class="mt-2">
-    <SectionHeading id="informazioni" title="Informazioni" />
+    <SectionHeading id="informazioni" title="Ci sposiamo!" />
 
     <v-row justify="center">
       <v-col cols="12" md="10" class="px-6 py-0">
@@ -12,19 +12,17 @@
           <v-col class="d-flex py-md-6 flex-column justify-space-between">
             <div>
               <div>
-                <span class="mr-2">Vi aspettiamo il</span>
-                <span class="text-primary font-weight-bold">31 Maggio 2025, 15:30</span>
-              </div>
-
-              <div>
-                <span class="text-primary mr-2">Indirizzo:</span>
+                Vi aspettiamo il
+                <strong class="text-primary">31 Maggio 2025, 15:30</strong>
+                alla
                 <a
                   href="https://www.google.it/maps/place/Pieve+San+Pietro+di+Romena/@43.7743988,11.7137861,17z/data=!3m2!4b1!5s0x132b9f8dbbee1ef7:0x5267ff0f08a47beb!4m6!3m5!1s0x132b9f8dbaaf76f5:0xfda8037f5a31cd17!8m2!3d43.774395!4d11.716361!16s%2Fg%2F15dqjwwm?entry=ttu&g_ep=EgoyMDI1MDIxOS4xIKXMDSoASAFQAw%3D%3D"
                   target="_blank"
                   class="font-weight-bold"
                 >
-                  Pieve di San Pietro a Romena (Pratovecchio Stia, AR)</a
-                >
+                  Pieve di San Pietro a Romena (Pratovecchio Stia, AR)
+                  <v-icon size="small">mdi-open-in-new</v-icon>
+                </a>
               </div>
             </div>
 

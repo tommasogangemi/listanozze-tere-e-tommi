@@ -1,7 +1,7 @@
 <template>
   <v-app class="bg-primary-light">
     <v-main>
-      <v-row justify="center" class="my-6">
+      <v-row justify="center" class="my-0 my-md-6 mx-0">
         <v-col cols="12" md="8" class="bg-neutral rounded-xl">
           <PageHeader />
 

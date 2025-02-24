@@ -1,39 +1,49 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { computed, ref } from 'vue'
 import GiftModal from './GiftModal.vue'
 import type { EnrichedGift } from '@/composables/useSpreadsheet'
 
 const CARD: EnrichedGift = {
   name: 'Viaggio di nozze in Nuova Zelanda',
-  image: 'viaggio.jpeg',
-  availableAmount: 100000,
-  donatedPercentage: 0
+  image: 'viaggio.jpeg'
 }
 
-const showModal = ref(false)
+const giftModalView = ref<'payment' | 'message'>()
+const showModal = computed(() => !!giftModalView.value)
 </script>
 
 <template>
   <v-row justify="center">
     <v-col class="d-flex py-md-6 flex-column justify-space-evenly" style="gap: 20px">
       <p class="card">
-        <strong>Il regalo più bello sarà avervi con noi in questo giorno speciale!</strong> ❤️
+        <strong>Il regalo più bello sarà avervi accanto a noi in questo giorno!</strong>
         <br />
-        Se però desiderate aiutarci a rendere ancora più indimenticabile la nostra avventura
-        insieme, saremo felici di accogliere un vostro pensiero per il nostro viaggio di nozze in
-        <strong>Nuova Zelanda</strong>. Nessun obbligo, solo un gesto spontaneo che porteremo con
-        noi ovunque andremo! ✈️✨
+        Se desiderate, potete aiutarci a realizzare il viaggio dei nostri sogni in Nuova Zelanda,
+        oppure presso il negozio Fantechi Home di Pontassieve, troverete la nostra lista nozze - Via
+        Praga 13, Pontassieve, Tel. 055 8315634
       </p>
 
-      <div class="d-flex justify-center">
+      <div class="d-flex flex-column flex-md-row justify-space-around align-center">
+        <v-btn
+          rounded="lg"
+          flat
+          variant="outlined"
+          color="primary-lighten-1"
+          style="width: fit-content"
+          class="mb-4 mb-md-0"
+          @click="giftModalView = 'message'"
+        >
+          <span class="font-weight-bold"> Lascia un mesaggio di auguri </span>
+        </v-btn>
+
         <v-btn
           rounded="lg"
           flat
           color="primary-lighten-1"
           style="width: fit-content"
-          @click="showModal = true"
+          @click="giftModalView = 'payment'"
         >
-          Offri il tuo contributo
+          <span class="font-weight-bold"> Per contribuire al viaggio </span>
         </v-btn>
       </div>
     </v-col>
@@ -42,13 +52,11 @@ const showModal = ref(false)
       <v-img :src="CARD.image" aspect-ratio="1.7" cover width="396" class="rounded-lg" />
     </v-col>
 
-    <v-col cols="12" md="6" class="text-center">
-      <p>
-        Alternativamente puoi passare presso il negozio <strong>Fantechi Home</strong> di
-        Pontassieve dove troverai la nostra lista nozze
-      </p>
-    </v-col>
-
-    <GiftModal :show="showModal" :gift="CARD" @close-modal="showModal = false" />
+    <GiftModal
+      :show="showModal"
+      :view="giftModalView"
+      :gift="CARD"
+      @close-modal="giftModalView = undefined"
+    />
   </v-row>
 </template>

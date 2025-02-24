@@ -3,9 +3,9 @@
 
   <h1
     class="pretty-font text-primary text-center mt-8 mb-16"
-    style="font-size: 6rem; line-height: 6rem"
+    style="font-size: 4.5rem; line-height: 6rem"
   >
-    Teresa e Tommaso
+    Tommaso e Teresa
   </h1>
 
   <v-row justify="center" class="mb-4">

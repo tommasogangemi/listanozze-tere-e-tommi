@@ -3,8 +3,19 @@
     <div class="my-3">Puoi effettuare il pagamento puoi scegliere una delle seguenti opzioni</div>
 
     <div class="font-weight-bold">Bonifico bancario a:</div>
-    <div>Tommaso Tagliaferri</div>
-    <div>IBAN: IT28C0873638010000000074065</div>
+    <div class="mb-1">Tommaso Tagliaferri</div>
+    <div>
+      IBAN:
+      <v-btn
+        append-icon="mdi-content-copy"
+        color="primary-lighten-1"
+        rounded="lg"
+        variant="outlined"
+        @click="onIbanClick"
+      >
+        <span class="font-weight-bold"> IT28C0873638010000000074065 </span>
+      </v-btn>
+    </div>
 
     <div class="font-weight-bold mt-3 mb-1">Paypal</div>
     <div
@@ -29,15 +40,28 @@
     <v-divider class="my-5" />
     <div class="italic-font text-center text-accent" style="font-size: 2rem">Grazie!</div>
   </div>
+
+  <v-snackbar v-model="snackBar" rounded="lg"> Iban copiato! </v-snackbar>
 </template>
 
 <script setup lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent, ref } from 'vue'
 
 defineComponent({ name: 'GiftModalPaymentContent' })
 
+const snackBar = ref(false)
+
 const openWindow = (url: string) => {
   window.open(url, '_blank')
+}
+
+const onIbanClick = () => {
+  navigator.clipboard.writeText('IT28C0873638010000000074065')
+  snackBar.value = true
+
+  setTimeout(() => {
+    snackBar.value = false
+  }, 2000)
 }
 </script>
 

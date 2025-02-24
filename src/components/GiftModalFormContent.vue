@@ -11,7 +11,6 @@
     </v-col>
 
     <v-col cols="12" md="7" lg="6" class="text-center">
-      <div class="mb-4">Dai il tuo contributo</div>
       <v-form ref="giftForm" v-model="isFormValid">
         <v-text-field
           v-model="formState.donorName"
@@ -20,14 +19,14 @@
           class="mb-2"
           :rules="[mandatory]"
         />
-        <v-text-field
+        <!-- <v-text-field
           v-model="formState.donatedAmount"
           label="Inserisci quanto vorresti donare"
           append-inner-icon="mdi-currency-eur"
           density="compact"
           class="mb-2"
           :rules="[validateNumberField]"
-        />
+        /> -->
         <v-textarea
           v-model="formState.message"
           label="Lascia un messaggio per gli sposi (facoltativo)"
@@ -80,7 +79,7 @@ const isFormValid = ref(false)
 
 const getInitFormState = () => ({
   donorName: '',
-  donatedAmount: '',
+  // donatedAmount: '',
   message: ''
 })
 

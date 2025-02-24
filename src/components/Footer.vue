@@ -27,23 +27,11 @@
       </v-col>
     </v-row>
 
-    <!-- <div class="mt-6 mt-md-0">
-      <div class="text-primary font-weight-bold">I nostri recapiti</div>
-      <div>
-        <span class="text-primary font-weight-bold">Teresa: </span> +39 338 9648057 - Via della
-        Fornace 72, Compiobbi, Fiesole (FI)
-      </div>
-      <div>
-        <span class="text-primary font-weight-bold">Tommaso: </span> +39 347 5375249 - Piazza
-        Stazione 1A, Pontassieve (FI)
-      </div>
-    </div> -->
-
     <v-row justify="center">
       <v-col cols="12" md="auto" class="py-0 text-caption mb-n2 text-center">
         <span>Tommaso Tagliaferri, IBAN: IT28C0873638010000000074065</span>
       </v-col>
-      <v-col cols="12" md="auto" class="pb-0 py-md-0 text-caption mb-n2 text-center">
+      <!-- <v-col cols="12" md="auto" class="pb-0 py-md-0 text-caption mb-n2 text-center">
         <a href="https://www.paypal.me/ttagliaferri671" class="font-weight-bold" target="_blank"
           >Paypal</a
         >
@@ -55,7 +43,7 @@
         >
           Satispay
         </a>
-      </v-col>
+      </v-col> -->
     </v-row>
   </v-container>
 </template>
