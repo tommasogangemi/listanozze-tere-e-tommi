@@ -79,7 +79,7 @@ const isFormValid = ref(false)
 
 const getInitFormState = () => ({
   donorName: '',
-  // donatedAmount: '',
+  donatedAmount: '',
   message: ''
 })
 

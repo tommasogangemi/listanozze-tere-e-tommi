@@ -5,7 +5,9 @@ import type { EnrichedGift } from '@/composables/useSpreadsheet'
 
 const CARD: EnrichedGift = {
   name: 'Viaggio di nozze in Nuova Zelanda',
-  image: 'viaggio.jpeg'
+  image: 'viaggio.jpeg',
+  availableAmount: 100000,
+  donatedPercentage: 0
 }
 
 const giftModalView = ref<'payment' | 'message'>()

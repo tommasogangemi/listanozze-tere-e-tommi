@@ -6,8 +6,8 @@ import type { GiftConfig } from '@/cfg/items-list/types'
 import { computed, ref } from 'vue'
 
 export type EnrichedGift = GiftConfig & {
-  // availableAmount: number
-  // donatedPercentage: number
+  availableAmount: number
+  donatedPercentage: number
 }
 
 export type UserSheetInputs = {
@@ -25,16 +25,16 @@ const enrichGifts = computed(() => {
     const sheet = spreadSheet.value?.sheets.find((sheet) => sheet.name === gift.name)
     const rowsData = sheet?.rowsData ?? []
 
-    // const donatedAmount = rowsData.reduce((acc, row) => acc + Number(row.donatedAmount), 0)
-    // const donatedPercentage = (donatedAmount / (gift.price ?? 0)) * 100
+    const donatedAmount = rowsData.reduce((acc, row) => acc + Number(row.donatedAmount), 0)
+    const donatedPercentage = (donatedAmount / (gift.price ?? 0)) * 100
 
-    // const availableAmount = (gift.price ?? 0) - donatedAmount
+    const availableAmount = (gift.price ?? 0) - donatedAmount
 
     return {
       ...gift,
-      rowsData
-      // donatedPercentage,
-      // availableAmount
+      rowsData,
+      donatedPercentage,
+      availableAmount
     }
   })
 })
