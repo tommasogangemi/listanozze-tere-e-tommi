@@ -27,11 +27,11 @@
       </v-col>
     </v-row>
 
-    <v-row justify="center">
+    <!-- <v-row justify="center">
       <v-col cols="12" md="auto" class="py-0 text-caption mb-n2 text-center">
         <span>Tommaso Tagliaferri, IBAN: IT28C0873638010000000074065</span>
       </v-col>
-      <!-- <v-col cols="12" md="auto" class="pb-0 py-md-0 text-caption mb-n2 text-center">
+      <v-col cols="12" md="auto" class="pb-0 py-md-0 text-caption mb-n2 text-center">
         <a href="https://www.paypal.me/ttagliaferri671" class="font-weight-bold" target="_blank"
           >Paypal</a
         >
@@ -43,7 +43,7 @@
         >
           Satispay
         </a>
-      </v-col> -->
-    </v-row>
+      </v-col>
+    </v-row> -->
   </v-container>
 </template>

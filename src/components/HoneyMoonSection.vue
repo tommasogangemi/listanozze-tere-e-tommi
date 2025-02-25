@@ -35,7 +35,7 @@ const showModal = computed(() => !!giftModalView.value)
           class="mb-4 mb-md-0"
           @click="giftModalView = 'message'"
         >
-          <span class="font-weight-bold"> Lascia un mesaggio di auguri </span>
+          <span class="font-weight-bold"> Lascia un messaggio di auguri </span>
         </v-btn>
 
         <v-btn

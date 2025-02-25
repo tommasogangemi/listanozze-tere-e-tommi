@@ -13,7 +13,7 @@
             <div>
               <div>
                 Vi aspettiamo il
-                <strong class="text-primary">31 Maggio 2025, 15:30</strong>
+                <strong class="text-primary">31 Maggio 2025, ore 15:30</strong>
                 alla
                 <a
                   href="https://www.google.it/maps/place/Pieve+San+Pietro+di+Romena/@43.7743988,11.7137861,17z/data=!3m2!4b1!5s0x132b9f8dbbee1ef7:0x5267ff0f08a47beb!4m6!3m5!1s0x132b9f8dbaaf76f5:0xfda8037f5a31cd17!8m2!3d43.774395!4d11.716361!16s%2Fg%2F15dqjwwm?entry=ttu&g_ep=EgoyMDI1MDIxOS4xIKXMDSoASAFQAw%3D%3D"

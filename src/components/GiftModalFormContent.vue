@@ -1,14 +1,14 @@
 <template>
-  <v-row justify="space-between" align="center">
+  <!-- <v-row justify="space-between" align="center">
     <v-col cols="12" sm="auto" class="pb-0 pb-sm-3">
       <span class="italic-font text-primary" style="font-size: 2.5rem">{{ gift.name }}</span>
     </v-col>
-  </v-row>
+  </v-row> -->
 
-  <v-row>
-    <v-col cols="12" md="5" lg="6">
+  <v-row justify="center">
+    <!-- <v-col cols="12" md="5" lg="6">
       <v-img :src="gift.image" class="rounded-lg" cover />
-    </v-col>
+    </v-col> -->
 
     <v-col cols="12" md="7" lg="6" class="text-center">
       <v-form ref="giftForm" v-model="isFormValid">
@@ -29,7 +29,7 @@
         /> -->
         <v-textarea
           v-model="formState.message"
-          label="Lascia un messaggio per gli sposi (facoltativo)"
+          label="Lascia un messaggio per gli sposi"
           density="compact"
           class="mb-2"
         />
