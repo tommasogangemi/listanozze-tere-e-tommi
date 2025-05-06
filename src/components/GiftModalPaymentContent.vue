@@ -17,13 +17,13 @@
       </v-btn>
     </div>
 
-    <div class="font-weight-bold mt-3 mb-1">Paypal</div>
+    <!-- <div class="font-weight-bold mt-3 mb-1">Paypal</div>
     <div
       class="rounded-lg pa-1 paypal"
       @click="openWindow('https://www.paypal.me/ttagliaferri671')"
     >
       <v-img width="96" cover src="paypal.png" />
-    </div>
+    </div> -->
 
     <div class="font-weight-bold mt-3 mb-1">Satispay</div>
     <div
